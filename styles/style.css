@@ -1,0 +1,125 @@
+body {
+    font-family: 'Roboto';
+    margin-top: 56px;
+}
+
+header {
+    border-bottom: 1px solid #DBDBDB;
+    position: fixed;
+    top: 54px;
+    left: 0;
+    width: 100vw;
+}
+
+.header_content {
+    background-color: white;
+    display: flex;
+    height: 54px;
+    width: 935px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+header div{
+    display: flex;
+}
+
+header .separator {
+    margin: 0 10px;
+    border-right: 1px solid #DBDBDB;
+}
+
+.logo-instagram {
+    margin: auto 0;
+}
+
+.logo img{
+    margin-top: 10px;
+}
+
+.logo-instagram ion-icon{
+    width: 19.25px;
+    height: 19.25px;
+}
+
+.search_bar input{
+    width: 215px;
+    height: 28px;
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: none ;
+    border: 1px solid #DBDBDB;
+}
+
+.search_bar input::placeholder {
+    padding-left: 75px;
+    
+}
+
+
+.menu ion-icon{
+    width: 17.87px;
+    height: 17.87px;
+}
+
+.menu .teste{
+    display: block;
+}
+
+.menu .direct ion-icon{
+    margin: 0;
+}
+
+.menu {
+    width: 115px;
+    height: 17.86px;
+    justify-content: space-between;
+}
+
+
+body .separator {
+    border-bottom: 1px solid #DBDBDB;
+}
+
+main {
+    background-color: black;
+    width: 935px;
+    display: flex;
+    margin: 0 auto;
+}
+
+main .separator{
+    width: 28px;
+}
+.main_content{
+    background-color: aqua;
+    width: 614px;
+    height: 100%;
+}
+
+.side_menu{
+    background-color: blue;
+    width: 293px;
+    height: 420px;
+}
+
+.stories {
+    width: 614px;
+    height: 118px;
+    background-color: aquamarine;
+    margin-top: 34px;
+    margin-bottom: 24px;
+}
+
+.post {
+    width: 614px;
+    height: 749px;
+    background-color: rgba(109, 109, 201, 0.5);
+    margin-bottom: 60px;
+}
