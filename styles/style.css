@@ -19,7 +19,7 @@ header {
 .header_content {
     background-color: white;
     display: flex;
-    height: 54px;
+    height: 53px;
     width: 935px;
     justify-content: space-between;
     align-items: center;
@@ -61,13 +61,22 @@ header .separator {
     border-radius: 3px;
     border: none ;
     border: 1px solid #DBDBDB;
+    color: #8b8b8b;
+    box-sizing: border-box;
+}
+
+.search_bar input:focus{
+    outline: none;
+    box-shadow: 0 0 5px #DBDBDB;
+}
+
+.search_bar input:hover{
+    box-shadow: 0 0 5px #DBDBDB;
 }
 
 .search_bar input::placeholder {
     padding-left: 75px;
-    
 }
-
 
 .menu ion-icon{
     width: 17.87px;
@@ -385,4 +394,33 @@ main .separator{
 main div.separator{
     z-index: 2;
     background-color: #FAFAFA;
+}
+
+@media (max-width: 935px) {
+    
+    body{
+        width: 100%;
+         
+    }
+
+    .side_menu, main div.separator{
+        display: none;
+    }
+
+    main{
+        width: 100%;
+        justify-content: center;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    header .header_content{
+        width: calc(100vw - 25px);
+    }
+
 }
