@@ -115,6 +115,7 @@ main {
     width: 935px;
     display: flex;
     margin: 0 auto;
+    position: relative;
 }
 
 main .separator{
@@ -319,7 +320,7 @@ main .separator{
     text-decoration: underline;
 }
 
-.post .post_description a:last-child{
+.post .post_description a.more{
     text-decoration: none;
     font-weight: normal;
     color: #BEBEBE;
@@ -415,6 +416,8 @@ main .separator{
     width: 293px;
     height: 460px;
     margin-top: 34px;
+    position: sticky;
+    top: 89px;
 }
 
 .side_menu .profile{
@@ -515,6 +518,8 @@ main div.separator{
 footer{
     display: none;
 }
+
+
 
 @media (max-width: 935px) {
     
