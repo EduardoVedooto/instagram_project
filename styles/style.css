@@ -9,7 +9,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: calc(100vw - 20px);
     height: 54px;
     background-color: white;
     z-index: 100;
@@ -22,10 +22,6 @@ header {
     width: 935px;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     margin: 0 auto;
 }
 
@@ -37,19 +33,32 @@ header .separator {
     margin: 0 10px;
     border-right: 1px solid #DBDBDB;
     box-sizing: border-box;
+    height: 22px;
 }
 
-.logo-instagram {
+ion-icon.logo-instagram {
+    height: 20px;
+    width: 20px;
     margin: auto 0;
+}
+
+header .logo{
+    align-items: center;
 }
 
 .logo img{
     margin-top: 10px;
 }
 
-.logo-instagram ion-icon{
-    width: 19.25px;
-    height: 19.25px;
+
+header .header_content .logo .logo-instagram{
+    width: 20px;
+    height: 20px;
+    
+}
+
+ion-icon.direct{
+    display: none;
 }
 
 .search_bar input{
@@ -63,7 +72,7 @@ header .separator {
     color: #8b8b8b;
     box-sizing: border-box;
     text-align: center;
-    transition: width 0.5s;
+    transition: all 0.5s;
 }
 
 .search_bar input:focus{
@@ -237,9 +246,6 @@ main .separator{
     text-decoration: underline;
 }
 
-.post .title ion-icon{
-    margin-right: 18.5px;
-}
 
 .post .title a.options{
     margin: 0;
@@ -281,6 +287,7 @@ main .separator{
     height: 20px;
     margin: 0 17px;
     display: flex;
+    align-items: center;
 }
 
 .post .profile_photo{
@@ -401,6 +408,10 @@ main div.separator{
     background-color: #FAFAFA;
 }
 
+footer{
+    display: none;
+}
+
 @media (max-width: 935px) {
     
     body{
@@ -428,4 +439,113 @@ main div.separator{
         width: calc(100vw - 25px);
     }
 
+}
+
+@media (max-width: 614px){
+    header{
+        width: 100vw;
+
+    }
+    .header_content{
+        width: inherit;
+        display: flex;
+        width: inherit;
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+
+    .header_content .logo{
+        width: inherit;
+        height: inherit;
+        justify-content: space-between;
+    }
+
+    .header_content .search_bar{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    
+    .header_content .separator{
+        display: none;
+    }
+
+    ion-icon.direct{
+        display: block;
+        height: 20px;
+        width: 20px;
+    }
+
+    .main_content{
+        width: inherit;
+    }
+
+    .stories{
+        width: 100vw;
+        border-radius: 0;
+        border: none;
+        margin: 0;
+        background: none;
+    }
+
+    .stories .right_arrow_button{
+        display: none;
+    }
+
+    .post{
+        width: 100%;
+        height: max-content;
+        padding-bottom: 12px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .post img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .post .buttons{
+        width: auto;
+    }
+
+    .post .likes{
+        width: auto;
+        height: auto;
+    }
+
+    .post video{
+        width: 100%;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 54px;
+        border: 1px solid #DBDBDB;
+        box-sizing: border-box;
+        background-color: #FFF;
+        padding: 0 10px;
+    }
+
+    footer a{
+        height: 25px;
+        width: 25px;
+    }
+
+    footer ion-icon{
+        width: inherit;
+        height: inherit;
+    }
+
+    body {
+        margin-bottom: 54px;
+    }
 }
