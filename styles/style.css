@@ -2,7 +2,6 @@ body {
     font-family: 'Roboto';
     margin-top: 55px;
     background-color: #FAFAFA;
-    z-index: 50;
 }
 
 header {
@@ -54,7 +53,7 @@ header .separator {
 }
 
 .search_bar input{
-    width: 215px;
+    width: 125px;
     height: 28px;
     background-color: #FAFAFA;
     box-sizing: border-box;
@@ -63,19 +62,21 @@ header .separator {
     border: 1px solid #DBDBDB;
     color: #8b8b8b;
     box-sizing: border-box;
+    text-align: center;
+    transition: width 0.5s;
 }
 
 .search_bar input:focus{
+    border: 1px solid #8b8b8b;
     outline: none;
     box-shadow: 0 0 5px #DBDBDB;
+    text-align: start;
+    width: 215px;
+    background-color: #eeeeee;
 }
 
 .search_bar input:hover{
     box-shadow: 0 0 5px #DBDBDB;
-}
-
-.search_bar input::placeholder {
-    padding-left: 75px;
 }
 
 .menu ion-icon{
@@ -127,6 +128,7 @@ main .separator{
     box-sizing: border-box;
     display: flex;
     position: relative;
+    overflow: hidden;
 }
 
 .stories .profile{
@@ -294,6 +296,10 @@ main .separator{
     text-decoration: underline;
 }
 
+.post video{
+    object-fit: cover;
+}
+
 .side_menu{
     width: 293px;
     height: 460px;
@@ -392,7 +398,6 @@ main .separator{
 }
 
 main div.separator{
-    z-index: 2;
     background-color: #FAFAFA;
 }
 
